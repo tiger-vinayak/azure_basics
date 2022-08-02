@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Blob Storage</title>
+</head>
+
+<body>
+    <h1>{{ container }}</h1>
+    <p>This app displays the names of the files present in a container.
+        The name of the container is mentioned above</p>
+    {% for blob in blobs %}
+    <ul>
+
+        <li>{{ blob }}</li>
+    </ul>
+    {% endfor %}
+    <p>If a new file is uploaded to the container then this app will show the name of the new files as well on refresh
+    </p>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
