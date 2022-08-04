@@ -1,14 +1,20 @@
 # Azure Fundamentals
 This is repository contains the flask app, that displays the names of all the files present in my Azure Container.
 This is the first assignment of the MLOps-Azure training.
-# Running the app
+# Running the app on a local machine
 In order to run the flask app, perform the following steps
 
 1. Make sure you have set up the environment with all the dependencies.
+2. Activate the virtual environment by typing `source azure_env/bin/activate`
 2. Login to your Azure Account, using `az login` command in your terminal.
 3. Go to the root directory of the project, that is just outside of the `app` folder in the project directory.
 4. Run the command `flask run` and open `localhost:5000` in any browser.
 5. Your app should run perfectly!
+
+# Running the app deployed on the Azure Server
+1. Make sure that the app is running on the Azure VM.
+2. Click on the link [Azure App](azure-vm-dns.eastus.cloudapp.azure.com:5000).
+
 
 # Project Directory
 * `app`: This directory contains all the necessary html templates and `routes.py`.
@@ -40,3 +46,5 @@ def index():
     blob_names = [blob.name for blob in blob_list]
     return render_template('index.html', blobs=blob_names, container=container_name)
 ```
+# Billing Information
+![](billing_information.png)
