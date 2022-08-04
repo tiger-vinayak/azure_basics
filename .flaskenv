@@ -1,1 +1,2 @@
 FLASK_APP=azure_basics.py
+AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=storageaccount7696;AccountKey=YMNHzkbZasdlg9oyR+QLU8zsGIz+W2jTlhM6Ur5UKmzrRstkIllfzfAT89P/XnwGFxUYBaRKBvdn+AStoqzNmg==;EndpointSuffix=core.windows.net"
