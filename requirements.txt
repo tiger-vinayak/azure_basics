@@ -1,7 +1,6 @@
 alembic==1.8.1
 azure-core==1.24.2
 azure-storage-blob==12.13.0
-certifi @ file:///opt/conda/conda-bld/certifi_1655968806487/work/certifi
 cffi==1.15.1
 charset-normalizer==2.1.0
 click==8.1.3

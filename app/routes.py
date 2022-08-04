@@ -1,8 +1,7 @@
 import os
 import uuid
 
-from azure.storage.blob import (BlobClient, BlobServiceClient, ContainerClient,
-                                __version__)
+from azure.storage.blob import (BlobServiceClient, ContainerClient)
 from flask import render_template, url_for
 
 from app import app
