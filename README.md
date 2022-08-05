@@ -47,4 +47,4 @@ def index():
     return render_template('index.html', blobs=blob_names, container=container_name)
 ```
 # Billing Information
-![](/billing_information.png)
+![](billing_information.png)
