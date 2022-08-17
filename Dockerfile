@@ -26,7 +26,7 @@ COPY --chown="$APP_USER":"$APP_USER" ./ "$APP_HOME"/app
 USER "$APP_USER"
 WORKDIR "$APP_HOME"/app
 
-ENV PATH="$APP_HOME/ml-ops.env/bin:$PATH"
+ENV PATH="$APP_HOME/flask_env/bin:$PATH"
 
 EXPOSE 5000
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python", "azure_basics.py"]

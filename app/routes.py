@@ -1,17 +1,17 @@
 import os
 import uuid
 
-from azure.storage.blob import (BlobServiceClient, ContainerClient)
+from azure.storage.blob import BlobServiceClient, ContainerClient
 from flask import render_template, url_for
 
 from app import app
 
 # Creating the blob service client 
-connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+connect_str = "DefaultEndpointsProtocol=https;AccountName=storageacc7697;AccountKey=hg4Digr6VZgyo9+Q7jQRQ/g2TZX+nvemugwqVMTBSp7jSs/+mb6NnqVb5CgpL+kXg/6FeYGdVu96+AStAVgidQ==;EndpointSuffix=core.windows.net"
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
 # Getting the existing container from the storage account
-container_name = '0c53dc52-f234-4404-b086-4dbb4e36042d'
+container_name = 'dummy-container'
 container_client = blob_service_client.get_container_client(container_name)
 
 
